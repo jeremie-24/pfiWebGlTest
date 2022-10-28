@@ -1,0 +1,193 @@
+body {
+    background-image: linear-gradient(180deg, rgb(101, 175, 255), rgb(80, 92, 255));
+    height: 100vh;
+    background-color: rgb(234, 234, 234);
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    /*border: 1px solid lightgray;*/
+}
+
+.headerPanel {
+    flex: 0.5;
+    background-image: linear-gradient(180deg, lightgray, gray);
+    padding: 5px;
+    /*height: 7vh;*/
+}
+
+.scrollContainer {
+    overflow-y: scroll;
+    flex: 12;
+    border-top: 1px solid lightgray;
+}
+
+.header {
+    width: 100%;
+    font-size: 26px;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+    text-align: center;
+}
+
+#searchBar {
+    padding-top: 10px;
+    display: none;
+    margin: 5px;
+    border-top: 1px solid lightgray;
+}
+
+#nouvellesList {
+    width: 100%;
+    padding: 10px;
+    /*text-align: center;*/
+}
+
+.favicon {
+    height: 24px;
+    margin: 8px;
+}
+
+.headerLayout {
+    display: grid;
+    grid-template-columns: 50px auto 35px 35px;
+    align-items: center;
+
+}
+
+
+.nouvelleLayout {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 25px
+}
+
+
+
+.littleMargin {
+    margin: 4px;
+}
+
+.cmd {
+    cursor: pointer;
+    font-size: 30px !important;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+}
+
+.cmd:hover {
+    color: rgb(2, 166, 221);
+}
+
+.cmd:active {
+    color: lightblue;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nouvelleImage{
+    width: 100%;
+    /*
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    */
+}
+
+
+.title{
+    font-size: calc(1.325rem + .9vw);
+    font-weight: 500;
+}
+.date{
+    color: rgb(152, 152, 152);
+}
+.category{
+    color: rgb(0, 98, 255);
+    font-size: calc(0.5rem + .9vw);
+    font-weight: 500;
+}
+.nouvelleHeaderLayout{
+    display: grid;
+    grid-template-columns: auto 35px 35px;
+    align-items: center;
+}
+
+p{
+    overflow-wrap: break-word;
+   word-wrap: break-word;
+}
+
+#searchBar {
+    padding-top:10px;
+    display: none;
+    margin: 5px;
+    border-top: 1px solid lightgray;
+}
+.searchBarLayout {
+    display: grid;
+    grid-template-columns: 0.5fr 40px 1fr 35px 35px 16px;
+    align-items: center;
+
+}
+/* https://www.geeksforgeeks.org/how-to-change-the-position-of-scrollbar-using-css/ Designing for scroll-bar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /*background: gainsboro;*/
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  
+    background:  linear-gradient(180deg, lightgray, gray); /*black;*/
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:   linear-gradient(180deg, rgb(242, 242, 242), rgb(200, 200, 200));
+}
+
+/*https://codepen.io/beedaan/pen/JWNWXa*/
+.textModule p.collapse[aria-expanded="false"] {
+    display: block;
+    height: 40px !important;
+    overflow: hidden;
+}
+
+.textModule p.collapsing[aria-expanded="false"] {
+    height: fit-content !important;
+    overflow: hidden;
+}
+
+.rowAlignRight {
+    align-self: right;
+}
+
+div2,
+span2 {
+    border: 1px solid red;
+}
